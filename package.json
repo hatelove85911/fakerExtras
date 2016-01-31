@@ -1,0 +1,28 @@
+{
+  "name": "fakerextras",
+  "version": "0.1.0",
+  "description": "faker extras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatelove85911/fakerExtras.git"
+  },
+  "keywords": [
+    "faker",
+    "extras"
+  ],
+  "author": "Jun Shen <redwolf85911@gmail.com> (https://hatelove85911.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hatelove85911/fakerExtras/issues"
+  },
+  "homepage": "https://github.com/hatelove85911/fakerExtras#readme",
+  "dependencies": {
+    "faker": "^3.0.1",
+    "lodash": "^4.1.0",
+    "moment": "^2.11.1"
+  }
+}
