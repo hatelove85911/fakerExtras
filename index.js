@@ -101,11 +101,11 @@ faker.extras = {
     }
 
     // turn a segment: [offset1, offset2] ( offset2 > offset1) into a stage
-    var turnSegmentIntoStop = _.bind(this, function (segment) {
+    var turnSegmentIntoStop = _.bind(function (segment) {
       var t1 = moment(start).add(segment[0], 'ms').toDate()
       var t2 = moment(start).add(segment[1], 'ms').toDate()
       return this.stage(t1, t2)
-    })
+    }, this)
 
     var process = _.flow(diff, nOffset, duplicateElements, _.sortBy(_.identity), _.drop(1), _.dropRight(1), _.chunk(2), _.map(turnSegmentIntoStop))
     return process(start, end)
